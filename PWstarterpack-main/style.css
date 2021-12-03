@@ -1,0 +1,81 @@
+/* 
+        Howdy! 
+        This is your styling page (css: casscading style sheet)
+        
+        This is a comment. Outside of this section, you will add
+        specific styles to add some pizzaz to your website.
+ */
+
+ body, html {
+    height: 100%;
+    
+        }  
+        
+.background-pic {
+    background-image: url(img/NhmAYq.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-page-background {
+    background-image: url(img/NhmAYq.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name {
+    font-size: 80px;
+    color:mintcream;
+    padding-top: 12%;
+    padding-bottom: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background-text {
+    font-size: 50px;
+    color:mintcream;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+.about-me-name {
+    font-size: 50px;
+    color:mintcream;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+.about-me-text {
+    font-size: 30px;
+    color:mintcream;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+footer {
+    background-color:silver;
+    padding-top: 30px;
+
+}
+
+.social {
+    font-size: 50px;
+    padding: 18px;
+}
+.fa-facebook {
+    color:#3b5998;
+}
+.fa-twitter {
+    color:#00acee;
+}
+.fa-instagram {
+    color:#517fa4;
+}
+.fa-facebook:hover {
+    color:#a8a8a8;
+}
+.fa-twitter:hover {
+    color:#a8a8a8;
+}
+.fa-instagram:hover {
+    color:#a8a8a8
+}
