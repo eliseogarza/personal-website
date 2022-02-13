@@ -61,7 +61,8 @@ footer {
 
 .social {
     font-size: 50px;
-    padding: 18px;
+    padding-bottom: 18px;
+
 }
 .fa-facebook {
     color:#3b5998;
