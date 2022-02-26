@@ -29,6 +29,9 @@
     font-size: 50px;
     color: black;
 }
+.addpad {
+    padding-left: 65%;
+}
 .name {
     font-size: 80px;
     color:mintcream;
