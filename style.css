@@ -2,7 +2,16 @@ body, html {
     height: 100%;
     
 }  
-        
+
+nav {
+    background: silver;
+    backdrop-filter: blur(7px);
+    padding-right: 16px;
+    box-shadow: f;
+    margin: 10px;
+    border-radius: 10px;
+}
+
 .background-pic {
     background-image: url(img/skyline.jpg);
     height: 100%;
@@ -10,6 +19,8 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*
 .about-page-background {
     background-image: url(img/NhmAYq.jpg);
     height: 100%;
@@ -17,11 +28,11 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+*/
 .name {
     font-size: 80px;
     color:mintcream;
-    padding-top: 12%;
+    padding-top: 15%;
     padding-bottom: 0%;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -32,15 +43,20 @@ body, html {
     margin: 0;
 }
 .about-me-name {
-    font-size: 50px;
-    color:black;
+    font-size: 80px;
+    color:mintcream;
+    padding-top: 15%;
+    margin-bottom: 0%;
     font-family: 'Times New Roman', Times, serif;
 }
 .about-me-text {
-    font-size: 30px;
-    color:black;
+    font-size: 50px;
+    color:mintcream;
     font-family: 'Times New Roman', Times, serif;
+    margin: 0%;
 }
+
+/*
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
@@ -50,9 +66,10 @@ body, html {
     height: 30%;
     border: 4px solid black;
     border-radius: 40px;
-    /* The margins are top, right, bottom, left*/
+The margins are top, right, bottom, left
     margin: 5% 10% 0% 50%;
 }
+*/
 
 .about-me-background {
     background-color:silver;
@@ -77,9 +94,11 @@ footer {
 .fa-linkedin {
     color:#1C6FD0
 }
+
 .fa-instagram:hover {
     color:#a8a8a8
 }
+
 .fa-linkedin:hover {
     color:#a8a8a8;
 }
