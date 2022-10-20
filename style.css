@@ -44,7 +44,7 @@ body, html {
 /* Body Text */
 
 .name {
-    font-size: calc((.4em + 3vmin) + (.4em + 3vmax)); /* 80px */
+    font-size: 10vmin; /* 80px */
     color:mintcream;
     padding-top: 20%; /* 15% */
     padding-bottom: 0%; /* 0% */
@@ -52,7 +52,7 @@ body, html {
     font-family: 'Times New Roman', Times, serif;
 }
 .background-text {
-    font-size: calc((.4em + 1.3vmin) + (.4em + 1.3vmax));; /* 50px */
+    font-size: 4.8vmin; /* 50px */
     color:mintcream;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
