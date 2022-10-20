@@ -9,7 +9,7 @@ body, html {
 /* Backgrounds images (photo and later color/gradient) */
 
 .background-pic {
-    background-image: url(assets/landscape.jpg);
+    background-image: url("assets/landscape.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,8 +33,8 @@ body, html {
 }
 
 /* Centers the navigation bar elements within the list */
-.abs-centering {
-    position: absolute;
+.centering-nav {
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -44,7 +44,7 @@ body, html {
 .name {
     font-size: 10vh; /* 80px */
     color:mintcream;
-    padding-top: 36vh; /* 15% */
+    padding-top: 20%; /* 15% */
     padding-bottom: 0vh; /* 0% */
     margin-bottom: auto;
     font-family: 'Times New Roman', Times, serif;
