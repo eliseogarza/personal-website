@@ -13,36 +13,46 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+
+	<meta name="keywords" content="Eliseo Garza, CS, Computer Science, Portfolio, Student, Texas A&M, 2025">
+    <meta name="description" content="This is Eliseo Garza's Portfolio Website.">
 </head>
 
 <body>
 	<!--Navigation Bar-->
-	<nav class="navigation navbar fixed-top navbar-expand-lg navbar-light">
-			<!-- Logo now takes you to my name (Eliseo Garza) via bookmark -->
-			<a class="navbar-brand" href="#intro-content"><img src="assets/LogoV2.png" width="45" height="30" alt=""></a>
+	<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark">
 
-			<!--This creates the variables necessary for the dropdown bar lower in the code-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<!-- Creating a flex box that makes "flex items" -->
+		<div class="navbar-header d-flex col">
+			<!-- Logo now takes you to my name (Eliseo Garza) via bookmark -->
+			<a class="navbar-brand" href="#introduction">
+				<img src="assets/LogoV2.png" style= width:45px style= height:30px alt="Logo">
+			</a>
+
+			<!-- ml-auto creates margins on the left and pushes dropdown toggle to the far right -->
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+		</div>
 		
 		
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+
+				<!-- Update so href takes users to bookmarked location -->
+				<li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
 				<li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
 				<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
 				<li class="nav-item"><a class="nav-link" href="#contactMe">Contact Me</a></li>
-				<li class="nav-item"><a class="nav-link" href="assets/Eliseo-Resume.pdf" target="_blank">Resume</a></li>
 			</ul>
 			
 			<!-- No longer part of list in nav bar, ml-auto pushes it to the right of the navbar, it's now also a button with an outline -->
+			<a href="assets/Eliseo-Resume.pdf" class="ml-auto" target="_blank"><button type="button" class="btn btn-sm btn-outline-dark" style="color: #ffffff">Resume</button></a>
 		</div>
 	</nav>
 
-<!-- Introduction (name, A&M class, major) -->
-	<div class="container-fluid background-pic" id="intro-content">
+	<!-- Introduction (name, A&M class, major), intro-content makes the original background image darker -->
+	<div class="container-fluid background-pic" id="introduction">
 		<div class="row justify-content-center">
 			<span class="name">Eliseo Garza</span>
 		</div>
@@ -54,11 +64,9 @@
 	
 
 	<div class="second-background">
-		<div class="container-fluid">
-			<div>
-				<div>
-
-				</div>
+		<div class="container-fluid" id="about-me">
+			<div class="row justify-content-center">
+				<span>Text should be centered</span>
 			</div>
 		</div>
 

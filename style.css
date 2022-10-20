@@ -1,8 +1,15 @@
-/* Added smooth scrolling so that when using "bookmarks" it doesn't instantly teleport you */
+/* Creates color variables (accessed via: var(--main-color) etc.)*/
+:root{
+    /* --main-color: #29487D;
+    --side-color: #1DA1F2; */
+    --text-color: #ffffff;
+}
 
 body, html {
     height: 100%;
-    line-height: 1.2 !important;
+    line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
+
+    /* Added smooth scrolling so that when using "bookmarks" it doesn't instantly teleport you */
     scroll-behavior: smooth;
     
 }  
@@ -26,12 +33,20 @@ body, html {
 }
 
 /* Navigation Bar */
-.navigation {
-    background: silver;
-    backdrop-filter: blur(5px);
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.25);
     padding-right: 16px;
     margin: 10px;
     border-radius: 10px;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.275);
 }
 
 /* Centers the navigation bar elements within the list
@@ -44,17 +59,21 @@ body, html {
 
 /* Body Text */
 
+#introduction {
+    /* Darkens background image by placing a linear gradient of black with 0.427 - 0.4 opacity */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.227),rgba(0, 0, 0, 0.2)) , url("assets/landscape.jpg");
+}
+
 .name {
-    font-size: 10vmin; /* 80px */
-    color:mintcream;
-/*    padding-top: 38vmin; 15% */
+    font-size: 10vmin; /* Uses vmin to keep consistency (80px originally) */
+    color: var(--text-color);
     padding-bottom: 0%; /* 0% */
     margin-bottom: auto;
     font-family: 'Times New Roman', Times, serif;
 }
 .background-text {
     font-size: 4.8vmin; /* 50px */
-    color:mintcream;
+    color: var(--text-color);
     padding-bottom: 0%;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
@@ -82,7 +101,6 @@ body, html {
 .social {
     font-size: 50px;
     padding-bottom: 18px;
-
 }
 
 .fa-instagram {
