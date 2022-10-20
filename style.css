@@ -19,6 +19,7 @@ body, html {
 .background-pic {
     background-image: url("assets/landscape.jpg");
     height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,10 +27,6 @@ body, html {
 
     /* Keeps background image fixed even when scrolling */
     background-attachment: fixed;
-}
-
-.second-background { /* Creates solid gradient */
-    background-image: linear-gradient(45deg, rgba(31,86,115,1), rgba(117,159,188,1));;
 }
 
 /* Navigation Bar */
@@ -79,6 +76,13 @@ body, html {
     margin: 0;
 }
 
+/* About Me Section */
+
+#about-me { /* Creates solid gradient for background image (subject to change) */
+    background-image: linear-gradient(45deg, rgba(31,86,115,1), rgba(117,159,188,1));;
+    padding-top: 5vh;
+}
+
 /* Delete about-me-name and about-me-text (not needed) */
 
 /* .about-me-name {
@@ -97,6 +101,11 @@ body, html {
 
 
 /* Contact Section (change to rem, %, or vh) */
+
+#contact-me {
+    background-image: linear-gradient(45deg, rgba(31,86,115,1), rgba(117,159,188,1));;
+    padding-top: 2vh;
+}
 
 .social {
     font-size: 50px;
