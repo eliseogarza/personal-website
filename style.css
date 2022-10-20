@@ -2,6 +2,7 @@
 
 body, html {
     height: 100%;
+    line-height: 1.2 !important;
     scroll-behavior: smooth;
     
 }  
@@ -32,12 +33,13 @@ body, html {
     border-radius: 10px;
 }
 
-/* Centers the navigation bar elements within the list */
+/* Centers the navigation bar elements within the list
 .centering-nav {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
+*/
 
 /* Body Text */
 
@@ -45,7 +47,7 @@ body, html {
     font-size: 10vh; /* 80px */
     color:mintcream;
     padding-top: 20%; /* 15% */
-    padding-bottom: 0vh; /* 0% */
+    padding-bottom: 0%; /* 0% */
     margin-bottom: auto;
     font-family: 'Times New Roman', Times, serif;
 }
