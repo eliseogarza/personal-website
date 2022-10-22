@@ -7,28 +7,42 @@
 
 	<title>Eliseo Garza</title>
 
+	<!-- Importing bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+	<!-- Works in pair with bootstrap and font awesome -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- Font awesome (Github/Linkedin/Instagram icons etc.) -->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<!-- Imports AOS library (JavaScript) -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<script src="main.js"></script>
+	
 	<link rel="stylesheet" href="style.css">
 
 	<meta name="keywords" content="Eliseo Garza, CS, Computer Science, Portfolio, Student, Texas A&M, 2025">
-    <meta name="description" content="This is Eliseo Garza's Portfolio Website.">
+    <meta name="description" content="This a Portfolio Website for Eliseo Garza, showcasing experience, projects, .">
 </head>
 
 <body>
 	<!--Navigation Bar-->
-	<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark">
+	<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark" id="navbar-hide">
 
 		<!-- Creating a flex box that makes "flex items" -->
 		<div class="navbar-header d-flex col">
 
 			<!-- Logo now takes you to my name (Eliseo Garza) via bookmark -->
-			<!-- REMAKE LOGO AND DO IT IN WHITE THIS TIME -->
 			<a class="navbar-brand" href="#introduction">
-				<img src="assets/LogoV2.png" style= width:45px style= height:30px alt="Logo">
+				<img src="assets/LogoV1.png" style= width:45px style= height:30px alt="Logo">
 			</a>
 
 			<!-- ml-auto creates margins on the left and pushes dropdown toggle to the far right -->
@@ -41,43 +55,77 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 
-				<!-- Update so href takes users to bookmarked location -->
+				<!-- Update so href takes users to bookmarked location (FIXME) -->
 				<li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
-				<li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-				<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-				<li class="nav-item"><a class="nav-link" href="#contactMe">Contact Me</a></li>
+				<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+				<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact-me">Contact Me</a></li>
 			</ul>
 			
 			<!-- No longer part of list in nav bar, ml-auto pushes it to the right of the navbar, it's now also a button with an outline -->
-			<!-- UPDATE RESUME LINK -->
+			<!-- UPDATE RESUME LINK (FIXME) -->
 			<a href="assets/Eliseo-Resume.pdf" class="ml-auto" target="_blank"><button type="button" class="btn btn-sm btn-outline-dark" style="color: #ffffff">Resume</button></a>
 		</div>
 	</nav>
 
 	<!-- Introduction (name, A&M class, major), intro-content makes the original background image darker -->
-	<div class="container-fluid background-pic" id="introduction">
+	<div class="container-fluid" id="introduction">
 		<div class="row justify-content-center">
-			<span class="name">Eliseo Garza</span>
+			<div class="name">Eliseo Garza</div>
 		</div>
 		
 		<div class="row justify-content-center">
-			<span class="background-text">Texas A&M '25 | Computer Science</span>
+			<div class="background-text">Texas A&M '25 | Computer Science</div>
 		</div>
 	</div>
 	
-	<!-- CONTINUE HERE -->
-	<!-- Create a new "id" for every single section, re-doing the background in each one -->
+	<!-- About Me Section -->
 	<div class="container-fluid" id="about-me">
 		<div class="row justify-content-center">
-			<span></span> <!-- Put text in here to text where the div/span is -->
+			<div class="row justify-content-center background-text" style="margin-bottom: 4vmin;">About Me</div>
+		</div>
+
+		<!-- AOS not working properly (FIXME) -->
+		<div class="row justify-content-center">
+			<div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1250">
+				<div class="row justify-content-center">
+					<a>
+						<img src="assets/headshot.jpg" class="about-image" style="margin-bottom: 4vmin"; alt="Headshot">
+					</a>
+				</div>
+			</div>
+
+			<div class="col-md-6 text-left normal-text" style="border: white;">
+				My name is Eliseo Garza and...
+			</div>
+
 		</div>
 	</div>
 
+	<!-- Experience Section -->
+	<div class="container-fluid" id="experience">
+		<div class="normal-text text-center">
+			Experience Section (in progress...)
+		</div>
+	</div>
+
+	<!-- Projects Section -->
+	<div class="container-fluid" id="projects">
+		<div class="normal-text text-center">
+			Projects Section (in progress...)
+		</div>
+	</div>
+	
 	<!-- Contact Me Section -->
-	<div class="social text-center" id="contact-me">
-		<a href="https://github.com/eliseogarza" target="_blank"><i class ="fab fa-github"></i></a>
-		<a href="https://www.linkedin.com/in/eliseogarza" target="_blank"><i class ="fab fa-linkedin"></i></a>
-		<a href="https://www.instagram.com/eliseo_garza15/" target="_blank"><i class="fab fa-instagram"></i></a>
+	<!-- Create a container-fluid for this and customize properties (FIXME) -->
+	<div class="container-fluid" id="contact-me">
+		<div class="row justify-content-center background-text">Contact Me</div>
+
+		<div class="row justify-content-center" style="padding-bottom: 4vmin;">
+			<a href="https://github.com/eliseogarza" class="social-spacing" target="_blank"><i class ="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/eliseogarza" class="social-spacing" target="_blank"><i class ="fab fa-linkedin"></i></a>
+			<a href="https://www.instagram.com/eliseo_garza15/" class="social-spacing" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
 	</div>
 
 

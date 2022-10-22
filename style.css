@@ -6,30 +6,43 @@
 }
 
 body, html {
-    height: 100%;
+    /* height: 100%; */
     line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
+    background-color: #26242b;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 
     /* Added smooth scrolling so that when using "bookmarks" it doesn't instantly teleport you */
     scroll-behavior: smooth;
     
-}  
+}
+
+/* Customizes the scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 
 /* Backgrounds images (photo and later color/gradient) */
 
-.background-pic {
-    background-image: url("assets/landscape.jpg");
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 38vh;
-
-    /* Keeps background image fixed even when scrolling */
-    background-attachment: fixed;
-}
-
 /* Navigation Bar */
+
+#navbar-hide {
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
 
 .navbar-dark .navbar-nav .nav-link {
     color: var(--text-color);
@@ -37,6 +50,7 @@ body, html {
 
 .navbar {
     background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
     padding-right: 16px;
     margin: 10px;
     border-radius: 10px;
@@ -46,19 +60,10 @@ body, html {
     background: rgba(255, 255, 255, 0.275);
 }
 
-/* Centers the navigation bar elements within the list
-.centering-nav {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-*/
-
 /* Body Text */
 
 #introduction {
-    /* Darkens background image by placing a linear gradient of black with 0.427 - 0.4 opacity */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.227),rgba(0, 0, 0, 0.2)) , url("assets/landscape.jpg");
+    padding-top: 38vh;
 }
 
 .name {
@@ -78,38 +83,48 @@ body, html {
 
 /* About Me Section */
 
-#about-me { /* Creates solid gradient for background image (subject to change) */
-    background-image: linear-gradient(45deg, rgba(31,86,115,1), rgba(117,159,188,1));;
-    padding-top: 5vh;
+#about-me {
+    padding: 48vmin 12vmin 40vmin 12vmin;
 }
 
-/* Delete about-me-name and about-me-text (not needed) */
-
-/* .about-me-name {
-    font-size: 10vh;
-    color:mintcream;
-    padding-top: 28vh;
-    margin-bottom: 0%;
+.normal-text {
+    font-size: 3.6vmin; /* 50px */
+    color: var(--text-color);
+    padding-bottom: 0%;
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
-.about-me-text {
-    font-size: 50px;
-    color:mintcream;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0%;
-} */
+
+.about-image {
+    height: 28vmin;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Experience Section */
+
+#experience {
+    padding: 48vmin 12vmin 40vmin 12vmin;
+}
+
+
+/* Projects Section */
+
+#projects {
+    padding: 48vmin 12vmin 40vmin 12vmin;
+}
 
 
 /* Contact Section (change to rem, %, or vh) */
 
 #contact-me {
-    background-image: linear-gradient(45deg, rgba(31,86,115,1), rgba(117,159,188,1));;
-    padding-top: 2vh;
-}
-
-.social {
+    padding-top: 10vmin;
     font-size: 50px;
     padding-bottom: 18px;
+}
+
+.social-spacing {
+    padding: 1vmin 1vmin 1vmin 1vmin;
 }
 
 .fa-instagram {
