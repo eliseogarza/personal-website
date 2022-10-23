@@ -22,10 +22,13 @@
 	<!-- Font awesome (Github/Linkedin/Instagram icons etc.) -->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-	<!-- Imports AOS library (JavaScript) -->
+	<!-- Imports AOS library (CSS) -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<script src="main.js"></script>
+
+	<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');</style>
 	
 	<link rel="stylesheet" href="style.css">
 
@@ -33,7 +36,8 @@
     <meta name="description" content="This a Portfolio Website for Eliseo Garza, showcasing experience, projects, .">
 </head>
 
-<body>
+<body data-aos-delay="0">
+
 	<!--Navigation Bar-->
 	<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark" id="navbar-hide">
 
@@ -82,21 +86,34 @@
 	<!-- About Me Section -->
 	<div class="container-fluid" id="about-me">
 		<div class="row justify-content-center">
-			<div class="row justify-content-center background-text" style="margin-bottom: 4vmin;">About Me</div>
+			<div class="row justify-content-center" style="margin-bottom: 4vmin;">
+				<h1>About Me</h1>
+			</div>
 		</div>
 
-		<!-- AOS not working properly (FIXME) -->
 		<div class="row justify-content-center">
-			<div class="col-md-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1250">
+			<div class="col-md-6 aos-init aos-animate my-auto" data-aos="zoom-in" data-aos-duration="1500" style="padding-bottom: 6vmin;">
 				<div class="row justify-content-center">
-					<a>
-						<img src="assets/headshot.jpg" class="about-image" style="margin-bottom: 4vmin"; alt="Headshot">
-					</a>
+					<img src="assets/headshot.jpg" class="about-image"; alt="Headshot">
 				</div>
 			</div>
 
-			<div class="col-md-6 text-left normal-text" style="border: white;">
-				My name is Eliseo Garza and...
+			<div class="col-md-6 text-left normal-text my-auto" style="padding-bottom: 6vmin;">
+				<div class="row rounded-box">
+
+					<!-- Change or adjust about me description -->
+					<div class="about-me-card">
+						<p>I'm currently a second-year engineering student pursuing Computer Science with
+							an ambition to help others advance their coding knowledge. I am heavily invested
+							in TAMU SHPE and currently serve as a lead for the Technical Affairs Committee. 
+							My previous experiences include placing 2nd in the first-ever SHPEathon, where I 
+							collaborated with my team to create a mock company that developed a product aimed
+							at enhancing the lives of college students. When I'm not working on my personal 
+							website or attending SHPE meetings, I'm most likely playing soccer or trying to 
+							learn something new.
+						</p>
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -104,22 +121,30 @@
 
 	<!-- Experience Section -->
 	<div class="container-fluid" id="experience">
-		<div class="normal-text text-center">
-			Experience Section (in progress...)
+		<div class="text-center">
+			<h1>Experience</h1>
 		</div>
+
+
+
 	</div>
 
 	<!-- Projects Section -->
 	<div class="container-fluid" id="projects">
-		<div class="normal-text text-center">
-			Projects Section (in progress...)
+		<div class="text-center">
+			<h1>Projects</h1>
 		</div>
+
+		
+
 	</div>
 	
 	<!-- Contact Me Section -->
 	<!-- Create a container-fluid for this and customize properties (FIXME) -->
 	<div class="container-fluid" id="contact-me">
-		<div class="row justify-content-center background-text">Contact Me</div>
+		<div class="row justify-content-center">
+			<h1>Contact Me</h1>
+		</div>
 
 		<div class="row justify-content-center" style="padding-bottom: 4vmin;">
 			<a href="https://github.com/eliseogarza" class="social-spacing" target="_blank"><i class ="fab fa-github"></i></a>
