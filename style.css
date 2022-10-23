@@ -9,6 +9,7 @@ body, html {
     /* height: 100%; */
     line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
     background-color: #26242b;
+    font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -36,13 +37,22 @@ body, html {
     background-color: transparent;
 }
 
-/* Backgrounds images (photo and later color/gradient) */
-
 /* Navigation Bar */
 
+nav {
+    font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
+    font-size: 18px;
+}
+
+.btn-sm {
+    font-size: 18px;
+}
+
+/* Transition effect when sliding down/up (FIXME)
 #navbar-hide {
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
+    transition: top 0.3s; 
+}
+*/
 
 .navbar-dark .navbar-nav .nav-link {
     color: var(--text-color);
@@ -64,54 +74,79 @@ body, html {
 
 #introduction {
     padding-top: 38vh;
+    height: 100vh;
 }
 
 .name {
-    font-size: 10vmin; /* Uses vmin to keep consistency (80px originally) */
+    font-size: 12vmin; /* Uses vmin to keep consistency (80px originally) (10vmin orig) */
     color: var(--text-color);
     padding-bottom: 0%; /* 0% */
     margin-bottom: auto;
-    font-family: 'Times New Roman', Times, serif;
 }
 .background-text {
-    font-size: 4.8vmin; /* 50px */
+    font-size: 5.6vmin; /* 50px (4.8vmin orig) */
     color: var(--text-color);
     padding-bottom: 0%;
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
 }
 
 /* About Me Section */
 
 #about-me {
-    padding: 48vmin 12vmin 40vmin 12vmin;
+    padding: 85px 12vmin 40vmin 12vmin; /* Changed 48vmin to 85px */
+}
+
+#about-me h1 {
+    font-size: xx-large;
+    color: var(--text-color);
+}
+
+#about-me p {
+    margin-bottom: 0%;
 }
 
 .normal-text {
-    font-size: 3.6vmin; /* 50px */
+    font-size: 1.1rem; /* 50px */
     color: var(--text-color);
     padding-bottom: 0%;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
 }
 
 .about-image {
-    height: 28vmin;
+    height: 22vmax; /* Orig 28vmin */
     width: auto;
     border-radius: 50%;
+}
+
+.about-me-card {
+    padding: 3.5vmin 3.5vmin 3.5vmin 3.5vmin;
+}
+
+.rounded-box {
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
 }
 
 /* Experience Section */
 
 #experience {
-    padding: 48vmin 12vmin 40vmin 12vmin;
+    padding: 85px 12vmin 40vmin 12vmin; /* Changed 48vmin to 85px */
 }
 
+#experience h1 {
+    font-size: xxx-large;
+    color: var(--text-color);
+}
 
 /* Projects Section */
 
 #projects {
-    padding: 48vmin 12vmin 40vmin 12vmin;
+    padding: 85px 12vmin 40vmin 12vmin; /* Changed 48vmin to 85px */
+}
+
+#projects h1 {
+    font-size: xxx-large;
+    color: var(--text-color);
 }
 
 
@@ -121,6 +156,10 @@ body, html {
     padding-top: 10vmin;
     font-size: 50px;
     padding-bottom: 18px;
+}
+
+#contact-me h1 {
+    color: var(--text-color);
 }
 
 .social-spacing {
