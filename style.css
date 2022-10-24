@@ -93,7 +93,9 @@ nav {
 /* About Me Section */
 
 #about-me {
-    padding: 85px 12vmin 40vmin 12vmin; /* Changed 48vmin to 85px */
+    /* Changed 48vmin to 85px */
+    padding: 85px 12vmin 0vmin 12vmin; 
+    min-height: 100vmin;
 }
 
 #about-me h1 {
