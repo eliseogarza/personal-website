@@ -7,7 +7,6 @@
 
 body, html {
     /* height: 100%; */
-    line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
     background-color: #26242b;
     font-family: 'Montserrat', sans-serif; /* Orig Segoe UI Symbol */
     height: 100vh;
@@ -75,6 +74,7 @@ nav {
 #introduction {
     padding-top: 38vh;
     height: 100vh;
+    line-height: 1.2 !important; /* Changes line-height from 1.5 since there was too much space in-between lines */
 }
 
 .name {
