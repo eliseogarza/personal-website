@@ -99,7 +99,7 @@ nav {
 }
 
 #about-me h1 {
-    font-size: xx-large;
+    font-size: xxx-large;
     color: var(--text-color);
 }
 
@@ -119,15 +119,25 @@ nav {
     border-radius: 50%;
 }
 
+/* Creates spacing for the descriptions in the boxes */
 .card-spacing {
     padding: 3.5vmin 3.5vmin 3.5vmin 3.5vmin;
 }
 
+
+/* Class for all the dark boxes that text goes in */
 .rounded-box {
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(5px);
+    
+    box-shadow: 4px 4px 12px 4px rgba(0,0,0,0.2);
+    transition: 0.4s;
 }
+
+/* Creates light white shadow around box on hover */
+.rounded-box:hover {
+    box-shadow: 4px 8px 24px 4px rgba(255, 255, 255, 0.4);
+  }
 
 /* Experience Section */
 
@@ -154,11 +164,18 @@ nav {
     margin-bottom: 0%;
 }
 
+/* So that the images don't oversize (as they're more square) */
+#experience img {
+    height: auto;
+    width: 64%;
+}
+
 .box-image {
     height: auto;
     width: 100%;
 }
 
+/* Adds padding around element (image or text box) */
 .box-padding {
     padding: 4vmin 2vmin 4vmin 2vmin;
 }
@@ -166,7 +183,7 @@ nav {
 /* Projects Section */
 
 #projects {
-    padding-top: 85px; /* Changed 48vmin to 85px */
+    padding-top: 85px;
     min-height: 100vmin;
 }
 
@@ -188,10 +205,12 @@ nav {
     margin-bottom: 0%;
 }
 
+/* So that the rounded boxes don't touch the sides of the screen */
 .side-margin {
     margin: 0vmin 4.2vmin 0vmin 4.2vmin;
 }
 
+/* Goes after each rounded-box to create seperation/space */
 .bottom-space {
     margin-bottom: 4vmin;
 }
