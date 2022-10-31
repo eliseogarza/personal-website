@@ -154,7 +154,6 @@ nav {
 #projects {
     padding-top: 85px; /* Changed 48vmin to 85px */
     min-height: 100vmin;
-    height: 100vh; /* CHANGE LATER ONCE I HAVE MORE CONTENT - FIXME */
 }
 
 #projects h1 {
@@ -180,8 +179,16 @@ nav {
     width: 100%;
 }
 
+.image-pad {
+    padding: 4vmin 2vmin 4vmin 2vmin;
+}
+
 .side-margin {
     margin: 0vmin 4.2vmin 0vmin 4.2vmin;
+}
+
+.bottom-space {
+    margin-bottom: 4vmin;
 }
 
 /* Contact Section (change to rem, %, or vh) */
