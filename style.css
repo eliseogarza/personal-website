@@ -134,11 +134,16 @@ nav {
 #experience {
     padding-top: 85px; /* Changed 48vmin to 85px - 85px 12vmin 0vmin 12vmin */
     min-height: 100vmin;
-    height: 100vh; /* CHANGE LATER ONCE I HAVE MORE CONTENT - FIXME */
 }
 
 #experience h1 {
     font-size: xxx-large;
+    color: var(--text-color);
+}
+
+#experience h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
     color: var(--text-color);
 }
 
@@ -147,6 +152,15 @@ nav {
     color: var(--text-color);
     padding-bottom: 0%;
     margin-bottom: 0%;
+}
+
+.box-image {
+    height: auto;
+    width: 100%;
+}
+
+.box-padding {
+    padding: 4vmin 2vmin 4vmin 2vmin;
 }
 
 /* Projects Section */
@@ -172,15 +186,6 @@ nav {
     color: var(--text-color);
     padding-bottom: 0%;
     margin-bottom: 0%;
-}
-
-.projects-image {
-    height: auto;
-    width: 100%;
-}
-
-.image-pad {
-    padding: 4vmin 2vmin 4vmin 2vmin;
 }
 
 .side-margin {
